@@ -38,8 +38,8 @@ const App: React.FC = () => {
   const [levelIndex, setLevelIndex] = useState(6);
   const [points, setPoints] = useState(0);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 11;
-  const profitPerHour = 126420;
+  const pointsToAdd = 1;
+  const profitPerHour = 60;
 
   const [dailyRewardTimeLeft, setDailyRewardTimeLeft] = useState("");
   const [dailyCipherTimeLeft, setDailyCipherTimeLeft] = useState("");
@@ -139,7 +139,7 @@ const App: React.FC = () => {
               <Hamster size={24} className="text-[#d4d4d4]" />
             </div>
             <div>
-              <p className="text-sm">Nikandr (CEO)</p>
+              <p className="text-sm">USER</p>
             </div>
           </div>
           <div className="flex items-center justify-between space-x-4 mt-1">
@@ -188,16 +188,21 @@ const App: React.FC = () => {
                 <p className="text-[10px] text-center text-white mt-1">Daily cipher</p>
                 <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyCipherTimeLeft}</p>
               </div>
-              <div className="bg-[#272a2f] rounded-lg px-4 py-2 w-full relative">
-                <div className="dot"></div>
-                <img src={dailyCombo} alt="Daily Combo" className="mx-auto w-12 h-12" />
-                <p className="text-[10px] text-center text-white mt-1">Daily combo</p>
-                <p className="text-[10px] font-medium text-center text-gray-400 mt-2">{dailyComboTimeLeft}</p>
-              </div>
+             
             </div>
+            <div className="flex justify-center">
+  <h1 className="font-bangers text-white text-4xl font-bold py-4 shadow-xl">
+    PUNCH GARY GENSLER
+  </h1>
+</div>
+
+
+
 
             <div className="px-4 mt-4 flex justify-center">
+            
               <div className="px-4 py-2 flex items-center space-x-2">
+                
                 <img src={dollarCoin} alt="Dollar Coin" className="w-10 h-10" />
                 <p className="text-4xl text-white">{points.toLocaleString()}</p>
               </div>
