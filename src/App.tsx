@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Hamster from './icons/Hamster';
-import { binanceLogo, dailyCipher, dailyCombo, dailyReward, dollarCoin, hamsterCoin, mainCharacter } from './images';
+import { binanceLogo, dailyCipher, dailyReward, dollarCoin, hamsterCoin, mainCharacter } from './images';
 import Info from './icons/Info';
 import Settings from './icons/Settings';
 import Mine from './icons/Mine';
@@ -43,7 +43,7 @@ const App: React.FC = () => {
 
   const [dailyRewardTimeLeft, setDailyRewardTimeLeft] = useState("");
   const [dailyCipherTimeLeft, setDailyCipherTimeLeft] = useState("");
-  const [dailyComboTimeLeft, setDailyComboTimeLeft] = useState("");
+
 
   const calculateTimeLeft = (targetHour: number) => {
     const now = new Date();
@@ -68,7 +68,7 @@ const App: React.FC = () => {
     const updateCountdowns = () => {
       setDailyRewardTimeLeft(calculateTimeLeft(0));
       setDailyCipherTimeLeft(calculateTimeLeft(19));
-      setDailyComboTimeLeft(calculateTimeLeft(12));
+  
     };
 
     updateCountdowns();
