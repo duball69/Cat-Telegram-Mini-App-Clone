@@ -1,3 +1,23 @@
+.background-image {
+  background-image: url('https://i.imgur.com/0KJVRGq.png'); /* URL of your image */
+  background-size: cover; /* Scale the background image to cover the element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  width: 100%; /* Ensure it covers the entire width */
+  height: 100%; /* Ensure it covers the entire height */
+  border-radius: 46px 46px 0 0;
+
+}
+
+.bg-overlay {
+  background-color: rgba(29, 32, 37, 0.7); /* Adjust color and opacity for overlay if needed */
+  border-radius: 0 0 46px 46px; /* Rounded bottom corners */
+}
+
+
+
+
+
 .progress-gradient {
   background: linear-gradient(to right, #90ef89, #d692dd, #726edd);
 }
@@ -34,7 +54,7 @@
 }
 
 .circle-outer {
-  background: linear-gradient(to bottom, #ff0000, #a00000);
+  background: linear-gradient(to bottom, #ff000000, #a0000000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +65,7 @@
 }
 
 .circle-inner {
-  background: radial-gradient(circle, #000000, #282e3e);
+  background: radial-gradient(circle, #00000000, #282e3e00);
   display: flex;
   align-items: center;
   justify-content: center;
